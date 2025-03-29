@@ -48,7 +48,7 @@ const ProductItem = ({ image, id, name, offer, Price, brand, itemCount, ratings,
     }
 
     return (
-        <div className='relative transition-all bg-white cursor-pointer  max-h-[40vh] sm:min-h-[50vh] min-h-[34vh] duration-300 sm:hover:shadow-xl flex flex-col border rounded-xl'>
+        <div className='relative transition-all bg-white cursor-pointer max-h-[40vh] sm:min-h-[50vh] min-h-[32vh] pb-1 duration-300 sm:hover:shadow-xl flex flex-col border rounded-xl'>
             <img onClick={(event) => {
                 event.stopPropagation()
                 addToWIshlist(id)
@@ -66,10 +66,10 @@ const ProductItem = ({ image, id, name, offer, Price, brand, itemCount, ratings,
                         {ratings.length > 0 ? renderStars(averageRating) : ''}
                         <span className="ml-2 text-gray-500 text-sm">{ratings.length > 0 ? `(${ratings.length})` : ''}</span>
                     </div>
-                    <div className='flex gap-2'>
-                        <p className=' text-small md:text-base text-black font-medium'>₹{newPrice}</p>
-                        <p className='text-gray-600 text-[14px] md:text-sm line-through'>₹{Price}</p>
-                        <p className='text-[13px] md:text-sm font-normal text-green-600'>{offer}% off</p>
+                    <div className='flex gap-2 items-center'>
+                        <p className=' text-[14px] md:text-base text-black font-medium'>₹{newPrice}</p>
+                        <p className='text-gray-600 text-[12px] md:text-sm line-through'>₹{Price}</p>
+                        <p className='text-[11px] md:text-sm font-normal text-green-600'>{offer}% off</p>
                     </div>
                     <p className='text-sm text-red-500'>{itemCount < 10 ? 'Only few left' : ''}</p>
                 </div>
