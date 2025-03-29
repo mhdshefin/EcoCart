@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
             <div className='flex justify-end items-center pr-2  md:hidden w-[16%]'>
-                <Link to={token ? '/account' : '/login'}><img className='w-6 cursor-pointer rounded-full' src={token ? profileImage : assets.profile_icon} alt="" /></Link>
+                <Link to={token ? '/account' : '/login'}><img className='w-5 cursor-pointer rounded-full' src={token ? profileImage : assets.profile_icon} alt="" /></Link>
                 <div className='flex items-center justify-end'>
                 <img onClick={() => setShowMore(true)} className=' w-5 h-5 cursor-pointer flex' src={assets.more} alt="" />
                 </div>

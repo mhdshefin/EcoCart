@@ -16,7 +16,7 @@ const Topfashiondeals = () => {
                 {
                     Topfashiondeals.map((item, index) => {
                         return (
-                            <Link to={`/collection/${item.section}/${item.category}/${item.subCategory}`} key={index}><div className='sm:min-w-[200px] w-[180px] h-[280px] md:w-[250px] lg:w-[250px] xl:w-[280px] md:h-[360px] flex flex-col items-center border border-gray-300 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl'>
+                            <Link to={`/collection/${item.section}/${item.category}/${item.subCategory}`} key={index}><div className='sm:min-w-[200px] w-[160px] h-[270px] md:w-[250px] lg:w-[250px] xl:w-[280px] md:h-[360px] flex flex-col items-center border border-gray-300 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl'>
                                 <div className='bg-[#fff] h-[223px] md:h-[330px] w-full flex-shrink-0 rounded-t-xl'>
                                     <img className='w-full h-full object-cover rounded-t-lg' src={item.images[0]} alt="" />
                                 </div>
