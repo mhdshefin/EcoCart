@@ -48,7 +48,7 @@ const ProductItem = ({ image, id, name, offer, Price, brand, itemCount, ratings,
     }
 
     return (
-        <div className='relative transition-all bg-white cursor-pointer  max-h-[40vh] sm:min-h-[50vh] min-h-[32vh] duration-300 sm:hover:shadow-xl flex flex-col border rounded-xl'>
+        <div className='relative transition-all bg-white cursor-pointer  max-h-[40vh] sm:min-h-[50vh] min-h-[34vh] duration-300 sm:hover:shadow-xl flex flex-col border rounded-xl'>
             <img onClick={(event) => {
                 event.stopPropagation()
                 addToWIshlist(id)
