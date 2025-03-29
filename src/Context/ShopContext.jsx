@@ -19,8 +19,8 @@ const shopContextProvider = (props) => {
     const [orderItems, setOrderItems] = useState([])
     const [loading, setLoading] = useState(true)
 
-const backendUrl = "https://ecocart-backend.onrender.com"
-
+    const backendUrl = "https://ecocart-backend.onrender.com"
+  
     const isProductWithoutSize = (itemId) => {
         const product = allProducts.find(p => p._id === itemId);
         return !product?.sizes;

@@ -46,7 +46,6 @@ const Product = () => {
 
   }
 
-
   const ratingCount = Object.values(ratings).reduce((acc, item) => {
     const roundedRating = Math.round(item.rating)
     acc[roundedRating] = (acc[roundedRating] || 0) + 1
@@ -107,7 +106,7 @@ const Product = () => {
     );
   };
 
-  const recentlyViewed = JSON.parse(localStorage.getItem("recentlyViewed") || [])
+  const recentlyViewed = JSON.parse(localStorage.getItem("recentlyViewed") || "[]");
 
   if (Product) {
     if (!recentlyViewed.includes(Product._id)) {
@@ -127,7 +126,7 @@ const Product = () => {
       } else {
         navigate(`/place/${Product._id}/${size}`)
       }
-    }else{
+    } else {
       navigate(`/place/${Product._id}/no_size`)
     }
   }
