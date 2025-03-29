@@ -56,7 +56,7 @@ const Navbar = () => {
     }, [product, navigate])
 
     return (
-        <div className='w-full flex fixed z-50 border-b-2 bg-white shadow-sm transition-all duration-500 transform'>
+        <div className='w-full flex fixed z-40 border-b-2 bg-white shadow-sm transition-all duration-500 transform'>
             <div className='md:w-[25%] w-[25%] py-5 flex sm:pl-0 pl-3 justify-center items-center'>
                 <Link to={'/'}><img className='w-32 sm:w-44 cursor-pointer' src={assets.logo} alt="" /></Link>
             </div>
