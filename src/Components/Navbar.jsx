@@ -87,7 +87,7 @@ const Navbar = () => {
                     <Link to={'/cart'}><img className='min-w-6 min-h-7 w-5 h-5 cursor-pointer' src={assets.cart_icon} alt="" /></Link>
                 </div>
                 <Link to={token ? '/account' : '/login'}>
-                    <div className='w-10 rounded-full'>
+                    <div className='w-6 rounded-full'>
                         <img className={`rounded-full w-full h-full object-contain cursor-pointer`} src={token ? profileImage : assets.profile_icon} alt="" />
                     </div></Link>
                 <img onClick={() => setShowMore(true)} className='min-w-8 min-h-8 w-5 h-5 cursor-pointer flex' src={assets.more} alt="" />
@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
             <div className='flex justify-end items-center pr-2  md:hidden w-[16%]'>
-                <Link to={token ? '/account' : '/login'}><img className='md:w-6 w-8 cursor-pointer rounded-full' src={token ? profileImage : assets.profile_icon} alt="" /></Link>
+                <Link to={token ? '/account' : '/login'}><img className='w-6 cursor-pointer rounded-full' src={token ? profileImage : assets.profile_icon} alt="" /></Link>
                 <div className='flex items-center justify-end'>
                 <img onClick={() => setShowMore(true)} className=' w-5 h-5 cursor-pointer flex' src={assets.more} alt="" />
                 </div>
